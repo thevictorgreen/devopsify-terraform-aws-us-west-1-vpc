@@ -26,7 +26,7 @@ resource "aws_instance" "sample-machine" {
 
   tags = {
     Name = "${var.sample_machine_name}${count.index}"
-    region = "us-east-1"
+    region = "us-west-1"
     env = "AAAAA"
     AnsibleRole = "sample"
     ClusterRole = "none"
